@@ -10,13 +10,10 @@ let navOpen = false;
 // Navbar code
 navToggle.addEventListener('click', () => {
     if (navOpen) {
-        navList.classList.remove('nav-list-open');
-        navContainer.classList.remove('nav-container-open');
+        navList.classList.remove('navbar-list-shown');
         navToggleIcon.setAttribute('d', closedPath);
     } else {
-        navList.classList.add('nav-list-open');
-        navContainer.classList.add('nav-container-open');
-        navContainer.classList.add('text-black');
+        navList.classList.add('navbar-list-shown');
         navToggleIcon.setAttribute('d', openPath);
     }
     navOpen = !navOpen;

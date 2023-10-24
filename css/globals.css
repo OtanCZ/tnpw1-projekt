@@ -1,18 +1,29 @@
 :root{
     --text: #fbfcfe;
     --background: #0b0d1e;
+    --backgroundHighlight: rgba(255, 255, 255, 0.05);
     --primary: #4e3ab6;
     --secondary: #180a1f;
     --accent: #903bba;
 }
 
-body {
+* {
+    color: var(--text);
+    text-align: center;
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background-color: var(--background);
-    color: var(--text);
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .center {
@@ -21,17 +32,21 @@ body {
 }
 
 .min-h-screen {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .navbar {
+    position: fixed;
     display: flex;
+    top: 0;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 8vh;
     width: 100%;
     border-bottom: 1px solid var(--primary);
+    background-color: var(--background);
+    z-index: 100;
 }
 
 .navbar-list {
@@ -43,7 +58,6 @@ body {
 
 .navbar-list li {
     margin: 0 1vw;
-    padding: 1.5vh;
     border-radius: 1vh;
     background-color: var(--primary);
     transition: all;
@@ -55,12 +69,99 @@ body {
 }
 
 .navbar li a {
+    padding: 1.5vh;
     text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     color: var(--text);
 }
 
+#nav-toggle {
+    display: none;
+}
+
 .button {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     border-radius: 1vh;
     background-color: var(--primary);
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: var(--background);
+    border-radius: 1vh;
+    padding: 2vh;
+    margin: 2vh;
+}
+
+.container img {
+    width: 60%;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vh;
+    width: 100%;
+}
+
+.bg-highlight {
+    background-color: var(--backgroundHighlight);
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 1vh;
+    padding: 2vh;
+    margin: 2vh;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .navbar-list-shown {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        position: absolute;
+        top: 7vh;
+        opacity: 1;
+        transition: all;
+        transition-duration: 0.3s;
+        background-color: var(--background);
+    }
+
+    .navbar-list li {
+        margin: 1vh 0;
+    }
+
+    .navbar-list li:hover {
+        background-color: var(--secondary);
+    }
+
+    .navbar-list li a {
+        color: var(--text);
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+}
+
