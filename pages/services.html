@@ -4,37 +4,341 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="../css/globals.css" rel="stylesheet">
-    <title>Recofi - Služby</title>
+    <title>ReCoFi - Služby</title>
 </head>
 <body>
-
 <div class="navbar" id="nav-container">
-    <header>Recofi</header>
+    <header>ReCoFi</header>
     <nav class="">
         <ul class="navbar-list" id="nav-list">
-            <li><a href="../index.html">Domov</a></li>
-            <li><a href="./services.html">Služby</a></li>
-            <li><a href="./cafe.html">Herna</a></li>
-            <li><a href="./about.html">O nás</a></li>
-            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a class="button" href="../index.html">Domov</a></li>
+            <li><a class="button" href="services.html">Služby</a></li>
+            <li><a class="button" href="gallery.html">Galerie</a></li>
+            <li><a class="button" href="about.html">O nás</a></li>
+            <li><a class="button" href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
-    <button style="margin-left: auto; height: 6vh; aspect-ratio: 1" class="button" id="nav-toggle">
-        <svg style="height: 100%; width: 100%" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd" d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+    <button class="button" id="nav-toggle" style="margin-left: auto; height: 6vh; aspect-ratio: 1; margin-right: 2vw">
+        <svg fill="currentColor" style="height: 100%; width: 100%" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                  d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
                   fill-rule="evenodd"
                   id="nav-toggle-svg-path"/>
         </svg>
     </button>
 </div>
 
-<section class="min-h-screen">
-    <h1 class="">
-        Služby
-    </h1>
+<section class="container footer bg-highlight" style="margin-top: 14vh">
+    <h1>Náš ceník</h1>
+    <div class="footer-item">
+        <a class="button" href="#ps">PlayStation</a>
+        <a class="button" href="#xbox">Xbox</a>
+        <a class="button" href="#nintendo">Nintendo</a>
+    </div>
+    <span>TIP: Pro rychlejší navigaci využijte tlačítka nahoře!</span>
 </section>
+
+<main>
+    <section class="container bg-highlight" style="margin-top: 20vh">
+        <h2 id="ps" style="color: #0070D1">PlayStation</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Model(y)</th>
+                <th>Služba</th>
+                <th>Cena</th>
+                <th>Čas</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Diagnostika a odhad ceny práce</td>
+                <td>ZDARMA</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Čištění konzole a výměna teplovodivé pasty</td>
+                <td>200 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Výměna ventilátoru</td>
+                <td>400 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>1, 2</td>
+                <td>Výměna DVD mechaniky</td>
+                <td>300 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>3, 4, 5</td>
+                <td>Výměna BluRay mechaniky</td>
+                <td>500 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>3, 4</td>
+                <td>Výměna pevného disku</td>
+                <td>1500 Kč</td>
+                <td>Do 2 dnů</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Výměna SSD</td>
+                <td>2000 Kč</td>
+                <td>Do 2 dnů</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Oprava ovladače</td>
+                <td>100-800 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Výměna zdroje</td>
+                <td>500-1000 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>PSP, Vita</td>
+                <td>Výměna baterie</td>
+                <td>700 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>PSP, Vita</td>
+                <td>Výměna displeje</td>
+                <td>800 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>PSP</td>
+                <td>Upgrade displeje na IPS</td>
+                <td>1000 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Oprava portů na desce</td>
+                <td>500-1000Kč</td>
+                <td>Do týdne</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Oprava základní desky</td>
+                <td>1000-5000 Kč</td>
+                <td>Do týdne</td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 2vh">
+            <h3>Nenašli jste co hledáte?</h3>
+            <p>Kontaktujte nás a my Vám rádi vypracujeme cenovou nabídku na míru.</p>
+            <p>Poskytujeme též modifikace konzolí od vzhledu po úpravu systému.</p>
+        </div>
+    </section>
+    <section class="container bg-highlight" style="margin-top: 20vh">
+        <h2 id="xbox" style="color: #107C10">Xbox</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Model(y)</th>
+                <th>Služba</th>
+                <th>Cena</th>
+                <th>Čas</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Diagnostika a odhad ceny práce</td>
+                <td>ZDARMA</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Čištění konzole a výměna teplovodivé pasty</td>
+                <td>200 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Výměna ventilátoru</td>
+                <td>500 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Original, 360</td>
+                <td>Výměna DVD mechaniky</td>
+                <td>500 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>One (X, S), Series X/S</td>
+                <td>Výměna BluRay mechaniky</td>
+                <td>500 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>Original, 360, Series (X, S)</td>
+                <td>Výměna pevného disku</td>
+                <td>1500 Kč</td>
+                <td>Do 2 dnů</td>
+            </tr>
+            <tr>
+                <td>Series X/S</td>
+                <td>Výměna SSD</td>
+                <td>2000 Kč</td>
+                <td>Do 2 dnů</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Oprava ovladače</td>
+                <td>100-800 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Výměna zdroje</td>
+                <td>500-1000 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Oprava portů na desce</td>
+                <td>500-1000 Kč</td>
+                <td>Do týdne</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Oprava základní desky</td>
+                <td>1000-5000 Kč</td>
+                <td>Do týdne</td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 2vh">
+            <h3>Nenašli jste co hledáte?</h3>
+            <p>Kontaktujte nás a my Vám rádi vypracujeme cenovou nabídku na míru.</p>
+            <p>Poskytujeme též modifikace konzolí od vzhledu po úpravu systému.</p>
+        </div>
+    </section>
+    <section class="container bg-highlight" style="margin-top: 20vh">
+        <h2 id="nintendo" style="color: #e4000f">Nintendo</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Model(y)</th>
+                <th>Služba</th>
+                <th>Cena</th>
+                <th>Čas</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Diagnostika a odhad ceny práce</td>
+                <td>ZDARMA</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Čištění konzole a výměna teplovodivé pasty</td>
+                <td>200 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Oprava ovladače nebo Joyconů</td>
+                <td>100-800 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>DS, 3DS, Switch Lite</td>
+                <td>Oprava tlačítek nebo joysticků</td>
+                <td>500-800 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>DS, 3DS, Switch (OLED)</td>
+                <td>Výměna displeje</td>
+                <td>1000-3000 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>Switch (OLED), Wii(-U)</td>
+                <td>Výměna ventilátoru</td>
+                <td>200-300 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Mobilní konzole</td>
+                <td>Výměna portu na cartridge</td>
+                <td>600 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>Mobilní konzole</td>
+                <td>Výměna baterie</td>
+                <td>400-800 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Mobilní konzole</td>
+                <td>Oprava napajecího portu</td>
+                <td>350 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Nemobilní konzole</td>
+                <td>Výměna mechaniky</td>
+                <td>400 Kč</td>
+                <td>Do 1 dne</td>
+            </tr>
+            <tr>
+                <td>Nemobilní konzole</td>
+                <td>Výměna zdroje</td>
+                <td>500-1000 Kč</td>
+                <td>Na počkání</td>
+            </tr>
+            <tr>
+                <td>Nemobilní konzole</td>
+                <td>Oprava portů na desce</td>
+                <td>500-1000 Kč</td>
+                <td>Do týdne</td>
+            </tr>
+            <tr>
+                <td>Jakákoliv</td>
+                <td>Oprava základní desky</td>
+                <td>1000-5000 Kč</td>
+                <td>Do týdne</td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 2vh">
+            <h3>Nenašli jste co hledáte?</h3>
+            <p>Kontaktujte nás a my Vám rádi vypracujeme cenovou nabídku na míru.</p>
+            <p>Poskytujeme též modifikace konzolí od vzhledu po úpravu systému.</p>
+        </div>
+    </section>
+</main>
+
 <footer>
-    <div>Semestrální/zápočtový projekt, všechny informace na webu jsou smyšlené.</div>
+    <div class="footer">
+        <div class="footer-item">
+            <div>Aktuální dne 27. 11. 2023</div>
+            <div>&copy; ReCoFi</div>
+            <a href="mailto:recofi@otan.cz">recofi@otan.cz</a>
+        </div>
+        <div>Semestrální/zápočtový projekt, všechny informace na webu jsou smyšlené.</div>
+    </div>
 </footer>
 <script src="../js/script.js" type="text/javascript"></script>
 </body>

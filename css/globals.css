@@ -1,4 +1,4 @@
-:root{
+:root {
     --text: #fbfcfe;
     --background: #0b0d1e;
     --backgroundHighlight: rgba(255, 255, 255, 0.05);
@@ -14,9 +14,32 @@
     padding: 0;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1vh;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1vh;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1vh;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1vh;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     background-color: var(--background);
     overflow-x: hidden;
 
@@ -24,6 +47,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .center {
@@ -52,7 +83,6 @@ body {
 .navbar-list {
     display: flex;
     flex-direction: row;
-    text-decoration: none;
     list-style: none;
 }
 
@@ -79,6 +109,7 @@ body {
     background-color: var(--primary);
     transition: background-color 0.3s;
     text-decoration: none;
+    color: var(--text);
 }
 
 .container .button {
@@ -106,10 +137,22 @@ body {
     width: 60%;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .gridbox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2vw;
+    width: 100%;
+}
+
+.gridbox img {
     width: 100%;
 }
 
@@ -139,12 +182,14 @@ body {
 .footer {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 1vh;
     width: 60%
 }
 
 .footer-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vh;
 }
 
 footer {
@@ -152,6 +197,19 @@ footer {
     display: flex;
     justify-content: center;
     border-top: 1px solid var(--primary);
+    padding: 1vh;
+}
+
+table {
+    width: 100%
+}
+
+td {
+    padding: 1vh;
+}
+
+tr {
+    border-bottom: 1px solid var(--primary);
 }
 
 @media (max-width: 768px) {

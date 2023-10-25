@@ -4,37 +4,72 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="../css/globals.css" rel="stylesheet">
-    <title>Recofi - Kontakt</title>
+    <title>ReCoFi - Kontakt</title>
 </head>
 <body>
-
 <div class="navbar" id="nav-container">
-    <header>Recofi</header>
+    <header>ReCoFi</header>
     <nav class="">
         <ul class="navbar-list" id="nav-list">
-            <li><a href="../index.html">Domov</a></li>
-            <li><a href="./services.html">Služby</a></li>
-            <li><a href="./cafe.html">Herna</a></li>
-            <li><a href="./about.html">O nás</a></li>
-            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a class="button" href="../index.html">Domov</a></li>
+            <li><a class="button" href="services.html">Služby</a></li>
+            <li><a class="button" href="gallery.html">Galerie</a></li>
+            <li><a class="button" href="about.html">O nás</a></li>
+            <li><a class="button" href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
-    <button style="margin-left: auto; height: 6vh; aspect-ratio: 1" class="button" id="nav-toggle">
-        <svg style="height: 100%; width: 100%" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd" d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+    <button class="button" id="nav-toggle" style="margin-left: auto; height: 6vh; aspect-ratio: 1; margin-right: 2vw">
+        <svg fill="currentColor" style="height: 100%; width: 100%" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                  d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
                   fill-rule="evenodd"
                   id="nav-toggle-svg-path"/>
         </svg>
     </button>
 </div>
 
-<section class="min-h-screen">
-    <h1 class="">
-        Kontakt
-    </h1>
-</section>
+<main>
+    <section class="container bg-highlight" style="margin-top: 20vh">
+        <h1>
+            Kontakt
+        </h1>
+        <div class="gridbox-2">
+            <div>
+                <p>ReCoFi</p>
+                <p>Ulice 123</p>
+                <p>500 01 Hradec Králové</p>
+                <p>Telefon: <a href="tel:+420123456789">+420 123 456 789</a></p>
+                <p>Email: <a href="mailto:ricofi@otan.cz">ricofi@otan.cz</a></p>
+            </div>
+            <div>
+                <iframe style="max-width: 100%;" src="https://en.frame.mapy.cz/s/neluduvano" width="400" height="280"></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="container bg-highlight">
+        <h2>Formulář</h2>
+        <form action="" class="flex" method="POST">
+            <label for="name">Jméno</label>
+            <input id="name" name="name" required type="text">
+            <label for="email">Email</label>
+            <input id="email" name="email" required type="email">
+            <label for="message">Zpráva</label>
+            <textarea id="message" name="message" required></textarea>
+            <button class="button" type="submit">Odeslat</button>
+        </form>
+    </section>
+</main>
+
 <footer>
-    <div>Semestrální/zápočtový projekt, všechny informace na webu jsou smyšlené.</div>
+    <div class="footer">
+        <div class="footer-item">
+            <div>Aktuální dne 27. 11. 2023</div>
+            <div>&copy; ReCoFi</div>
+            <a href="mailto:recofi@otan.cz">recofi@otan.cz</a>
+        </div>
+        <div>Semestrální/zápočtový projekt, všechny informace na webu jsou smyšlené.</div>
+    </div>
 </footer>
 <script src="../js/script.js" type="text/javascript"></script>
 </body>
