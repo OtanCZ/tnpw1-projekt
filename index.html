@@ -12,14 +12,14 @@
     <header>ReCoFi</header>
     <nav class="">
         <ul class="navbar-list" id="nav-list">
-            <li><a href="index.html">Domov</a></li>
-            <li><a href="./pages/services.html">Služby</a></li>
-            <li><a href="./pages/cafe.html">Herna</a></li>
-            <li><a href="./pages/about.html">O nás</a></li>
-            <li><a href="./pages/contact.html">Kontakt</a></li>
+            <li><a class="button" href="index.html">Domov</a></li>
+            <li><a class="button" href="./pages/services.html">Služby</a></li>
+            <li><a class="button" href="./pages/cafe.html">Herna</a></li>
+            <li><a class="button" href="./pages/about.html">O nás</a></li>
+            <li><a class="button" href="./pages/contact.html">Kontakt</a></li>
         </ul>
     </nav>
-    <button class="button" id="nav-toggle" style="margin-left: auto; height: 6vh; aspect-ratio: 1">
+    <button class="button" id="nav-toggle" style="margin-left: auto; height: 6vh; aspect-ratio: 1; margin-right: 2vw">
         <svg fill="currentColor" style="height: 100%; width: 100%" viewBox="0 0 24 24"
              xmlns="http://www.w3.org/2000/svg">
             <path clip-rule="evenodd"
@@ -32,7 +32,7 @@
 
 <section class="container bg-highlight" style="margin-top: 14vh">
     <h1>
-        Oprava konzolí a další elektroniky
+        Oprava a modifikace herních konzolí
     </h1>
     <h3>
         rychle, kvalitně a za dobrou cenu
@@ -57,7 +57,8 @@
             <h4>Kvalita především</h4>
             <svg class="" fill="none" stroke="currentColor" stroke-width="1.5"
                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" stroke-linecap="round"
+                <path d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"
+                      stroke-linecap="round"
                       stroke-linejoin="round"/>
             </svg>
             <p>Opravy provádíme pouze s originálními díly nebo aftermarket díly nejvyšší kvality.</p>
@@ -72,9 +73,28 @@
         </div>
     </div>
 </section>
-
+<section class="container" style="margin-top: 20vh">
+    <h2>Tak na co ještě čekáš?</h2>
+    <div class="gridbox-2">
+        <div class="grid-item bg-highlight">
+            <h4>Kontaktuj nás a zarezervuj si termín.</h4>
+            <a class="button" href="./pages/contact.html" style="">Kontakt</a>
+        </div>
+        <div class="grid-item bg-highlight">
+            <h4>Přijď se k nám podívat do herny!</h4>
+            <a class="button" href="./pages/cafe.html">Herna</a>
+        </div>
+    </div>
+</section>
 <footer>
-    <div>Semestrální/zápočtový projekt, všechny informace na webu jsou smyšlené.</div>
+    <div class="footer">
+        <div class="footer-item">
+            <div>Aktuální dne 27. 11. 2023</div>
+            <div>&copy; ReCoFi</div>
+            <a href="mailto:recofi@otan.cz">recofi@otan.cz</a>
+        </div>
+        <div>Semestrální/zápočtový projekt, všechny informace na webu jsou smyšlené.</div>
+    </div>
 </footer>
 <script src="./js/script.js" type="text/javascript"></script>
 </body>

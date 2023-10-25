@@ -58,19 +58,10 @@ body {
 
 .navbar-list li {
     margin: 0 1vw;
-    border-radius: 1vh;
-    background-color: var(--primary);
-    transition: all;
-    transition-duration: 0.3s;
-}
-
-.navbar-list li:hover {
-    background-color: var(--secondary);
 }
 
 .navbar li a {
     padding: 1.5vh;
-    text-decoration: none;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -86,6 +77,17 @@ body {
     border: 1px solid var(--secondary);
     border-radius: 1vh;
     background-color: var(--primary);
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.container .button {
+    padding: 1vh;
+    margin: 1vh;
+}
+
+.button:hover {
+    background-color: var(--secondary);
 }
 
 .container {
@@ -107,6 +109,13 @@ body {
 .gridbox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+    width: 100%;
+}
+
+.gridbox-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2vh;
     width: 100%;
 }
@@ -121,6 +130,28 @@ body {
     border-radius: 1vh;
     padding: 2vh;
     margin: 2vh;
+}
+
+.stroke-secondary {
+    stroke: var(--secondary);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%
+}
+
+.footer-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -162,6 +193,24 @@ body {
 
     #nav-toggle {
         display: block;
+    }
+
+    .gridbox {
+        width: 60%;
+        grid-template-columns: 1fr;
+    }
+
+    .gridbox-2 {
+        grid-gap: 1vh;
+    }
+
+    .grid-item {
+        padding: 1vh;
+        margin: 1vh;
+    }
+
+    .footer {
+        width: 100%
     }
 }
 
