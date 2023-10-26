@@ -215,6 +215,8 @@ tr {
 @media (max-width: 768px) {
     .container {
         width: 100vw;
+        padding: 0 2vh;
+        margin: 0 2vh;
     }
 
     .navbar-list {
