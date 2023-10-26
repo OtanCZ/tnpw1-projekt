@@ -126,7 +126,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 60vw;
     background-color: var(--background);
     border-radius: 1vh;
     padding: 2vh;
@@ -214,7 +214,7 @@ tr {
 
 @media (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 100vw;
     }
 
     .navbar-list {
