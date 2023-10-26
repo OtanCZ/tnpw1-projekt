@@ -212,6 +212,24 @@ tr {
     border-bottom: 1px solid var(--primary);
 }
 
+input {
+    border: 1px solid var(--secondary);
+    border-radius: 1vh;
+    padding: 1vh;
+    margin: 1vh;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+textarea {
+    border: 1px solid var(--secondary);
+    border-radius: 1vh;
+    padding: 1vh;
+    margin: 1vh;
+    background-color: var(--background);
+    color: var(--text);
+}
+
 @media (max-width: 768px) {
     .container {
         width: 100vw;

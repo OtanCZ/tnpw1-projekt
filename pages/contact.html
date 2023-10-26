@@ -30,7 +30,7 @@
 </div>
 
 <main>
-    <section class="container bg-highlight" style="margin-top: 20vh">
+    <section class="container bg-highlight" style="margin-top: 14vh">
         <h1>
             Kontakt
         </h1>
@@ -47,16 +47,16 @@
             </div>
         </div>
     </section>
-    <section class="container bg-highlight">
+    <section class="container bg-highlight" style="margin-top: 20vh">
         <h2>Formulář</h2>
-        <form action="" class="flex" method="POST">
+        <form class="flex" onsubmit="alert('Děkujeme za zaslání formuláře. Brzy se Vám ozveme.')">
             <label for="name">Jméno</label>
             <input id="name" name="name" required type="text">
             <label for="email">Email</label>
             <input id="email" name="email" required type="email">
             <label for="message">Zpráva</label>
             <textarea id="message" name="message" required></textarea>
-            <button class="button" type="submit">Odeslat</button>
+            <button class="button" type="submit" id="form-submit">Odeslat</button>
         </form>
     </section>
 </main>
