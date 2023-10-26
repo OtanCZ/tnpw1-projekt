@@ -215,8 +215,8 @@ tr {
 @media (max-width: 768px) {
     .container {
         width: 100vw;
-        padding: 0 2vh;
-        margin: 0 2vh;
+        padding: 2vh 0;
+        margin: 2vh 0;
     }
 
     .navbar-list {
@@ -274,7 +274,7 @@ tr {
     }
 
     footer {
-        padding: 0 1vh;
+        padding: 1vh 0;
     }
 }
 
