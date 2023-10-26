@@ -272,5 +272,9 @@ tr {
     .footer {
         width: 100vw
     }
+
+    footer {
+        padding: 0 1vh;
+    }
 }
 
