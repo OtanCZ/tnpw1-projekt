@@ -74,7 +74,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 8vh;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid var(--primary);
     background-color: var(--background);
     z-index: 100;
